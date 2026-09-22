@@ -7,30 +7,37 @@
 
 <body>
 
-    <h1>Ronaldo vs Messi</h1>
-    <p>Welcome to the ultimate football comparison.</p>
+   
+   <h1>Ronaldo vs Messi</h1>
 
-    <div class="players">
+<p>Compare two of football's greatest players.</p>
 
-        <div class="player-card">
-            <h2>Cristiano Ronaldo</h2>
-            <p>Portugal</p>
-            <p>Goals: 0</p>
-            <p>Assists: 0</p>
-        </div>
+<div class="players">
+<button id="compare-button">Compare Goals</button>
 
-        <div class="player-card">
-            <h2>Lionel Messi</h2>
-            <p>Argentina</p>
-            <p>Goals: 0</p>
-            <p>Assists: 0</p>
-        </div>
+<p id="result"></p>
+    <div class="player-card">
+        <img src="images/ronaldo.jpg" alt="Ronaldo">
 
+        <h2>Cristiano Ronaldo</h2>
+
+        <p>Goals: <span id="ronaldo-goals">0</span></p>
+        <p>Assists: <span id="ronaldo-assists">0</span></p>
+        <p>Ballon d'Or: <span id="ronaldo-ballon">0</span></p>
     </div>
 
-    <button onclick="showMessage()">Compare Players</button>
+    <div class="player-card">
+        <img src="images/messi.jpg" alt="Messi">
 
-    <script src="script.js"></script>
+        <h2>Lionel Messi</h2>
 
+        <p>Goals: <span id="messi-goals">0</span></p>
+        <p>Assists: <span id="messi-assists">0</span></p>
+        <p>Ballon d'Or: <span id="messi-ballon">0</span></p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
